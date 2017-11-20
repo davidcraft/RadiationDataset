@@ -1,0 +1,13 @@
+The original dropbox link does not have the new Revealer paper mutation and copy number calls. I recommend at this 
+point using these new calls since in the original gcmData.mat file from the original dropbox link, 
+there are about 30 cell lines without any mutation calls, meaning that those cell lines  -- which certainly
+have mutations -- did not get the muitation calls and so we have some missing data that is coded as 0s instead of missing.
+
+Anyhow, here is the link to the new gcmData2.mat file [which still has the old mutations because we do have data for almost 
+all of the 498 cell lines, just not quite all]:  https://www.dropbox.com/s/jw98gzc4g56keup/gcmData2.mat?dl=0
+
+
+Mutations and copy number modifications are in gcmData.mutcnvaluesRevealer
+and mutation/copy number names are in gcmData.mutcnRevealerNames
+Note these names end with for example _MUT which means they are calling a mutation,
+or e.g. _DEL for a gene deletion.
