@@ -25,7 +25,13 @@ gcmData =
                         auc: [1×498 double]
                        site: {1×498 cell}
                   histology: {1×498 cell}
-               subhistology: {1×498 cell}
+               subhistology: {1×498 cell}        
+               v------new in gcmData2.mat ------v
+               mutcnvaluesRevealer: [48270×498 double]
+         mutcnRevealerNames: {48270×1 cell}
+                       note: 'use Revealer for muts, original mut data has some missing values as 0'
+
+
 
 
 masterccleids are the cell line IDs used by the CCLE project, and we use them here too.
@@ -88,6 +94,12 @@ the hope is you don't need to go back to these original sources).
 
 mutations, seashore paper: zip file here:
 ftp://caftpd.nci.nih.gov/pub/OCG-DCC/CTD2/Broad/CTRPv2.2_2015_pub_CancerDisc_5_1210/
+[not recommending using these, see comments in newDropboxLink file]
+
+mutations now coming from Revealer paper "Characterizing genomic alterations in cancer 
+by complementary functional associations", i.e. this file CCLE_MUT_CNA_AMP_DEL_binary_Revealer.gct
+at broad ccle portal: https://data.broadinstitute.org/ccle_legacy_data/binary_calls_for_copy_number_and_mutation_data/CCLE_MUT_CNA_AMP_DEL_binary_Revealer.gct
+
 
 copy number and gene expression
 ftp://caftpd.nci.nih.gov/pub/OCG-DCC/CTD2/Broad/CTRPv2.1_2016_pub_NatChemBiol_12_109/
